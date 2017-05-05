@@ -1,0 +1,117 @@
+[
+  {
+    "key": "woodandgel",
+    "label": "Wood & Gel",
+    "desc": "Gather wood from trees and gel from slimes.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "torches",
+    "label": "Torches",
+    "desc": "Wood and gel.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "housing",
+    "label": "Housing",
+    "desc": "Build a house with at least 4 rooms.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "mining",
+    "label": "Mining",
+    "desc": "Ores, gems and heartcrystals",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "furnace",
+    "label": "Furnace",
+    "desc": "20 stone block, 4 woods and 3 torches",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "armorandtools",
+    "label": "Armor & Tools",
+    "desc": "Hook (15 single gem + chain), full golden/platinum armor and full golden/platinum tools.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "arena1",
+    "label": "Arena I (Eye of C'thulu)",
+    "desc": "Start your boss arena development.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "housing2",
+    "label": "Housing 2",
+    "desc": "Build at least 4 more rooms.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "eoc",
+    "label": "Farm Eye of C'thulus",
+    "desc": "Get enough demonite/crimson ores to craft your next set and tools.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "dryad",
+    "label": "Dryad",
+    "desc": "Make sure you have room for her and buy around 100 purification powder once she moves in.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "arena2",
+    "label": "Arena II (EoW or BoC)",
+    "desc": "Above ground level if you have corruption, or an inside the ‘cave’ if you have crimson.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "eoworboc",
+    "label": "Farm EoW or BoC",
+    "desc": "Get enough orbs to make a nightmare/deathbringer pickaxe and crimson/shadow set.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "side",
+    "label": "Side adventures and bosses",
+    "desc": "Underground Jungle (Queen Bee), Dungeon (Skeletron), Floating Islands, Oceans.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "hell",
+    "label": "Hell",
+    "desc": "Get enough hellstone for a molten pickaxe and the set.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "arena3",
+    "label": "Arena III (Wall of Flesh)",
+    "desc": "Make a really long platform made out of any block you want for The Wall of Flesh.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "wof",
+    "label": "Kill the Wall of Flesh and enter in hardmode",
+    "desc": "Don't forget to collect your Pwnhammer.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "newores",
+    "label": "Generate ores",
+    "desc": "pwn all but one demon altars with your Pwnhammer.",
+    "links": [],
+    "isHardmode": true
+  }, {
+    "key": "gathernewores",
+    "label": "Gather the new Ores",
+    "desc": "Tier 1 (Cobalt/Paladium), Tier 2 (Mythril/Orichalcum) and Tier 3 (Adamantite/Titanium).",
+    "links": [],
+    "isHardmode": true
+  }, {
+    "key": "arena4",
+    "label": "Arena IV (Harpies & Wyverns)",
+    "desc": "Get enough Souls of Flights and Huge Harpy Feather for your first wing.",
+    "links": [],
+    "isHardmode": true
+  }
+]
