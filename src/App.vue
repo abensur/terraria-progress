@@ -127,9 +127,11 @@ html, body {
     font-size: 24px;
   }
   .tpc__info {
-    left: auto;
-    width: 320px;
-    transform: translate(0, 0);
+    justify-content: center;
+  }
+  .tpc__info > div,
+  .tpc__info > button {
+    margin: 0 1rem;
   }
   .tpc__checklist {
     width: 1024px;
