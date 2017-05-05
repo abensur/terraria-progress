@@ -1,6 +1,6 @@
 <template>
   <div class="tpc">
-    <h1>Terraria Progression</h1>
+    <h1>Terraria Progress</h1>
     <div class="tpc__info" v-bind:class="{ 'tpc__info--active': progressionPercentage !== 0 }">
       <el-progress type="circle"
         :width="75"
