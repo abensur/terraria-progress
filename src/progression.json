@@ -1,5 +1,11 @@
 [
   {
+    "key": "helloworld",
+    "label": "Hello World",
+    "desc": "",
+    "isHardmode": false,
+    "isSubtitle": true
+  }, {
     "key": "slimesandstones",
     "label": "Slimes & Stones",
     "desc": "Harvest the surface for gel, wood and stone for early equipment (wooden armor, sword, bows, a bunch of arrows and torches).",
@@ -36,7 +42,7 @@
   }, {
     "key": "oresandgems",
     "label": "Ores and Gems",
-    "desc": "these will be usefull for making new tools, armors, and hooks. Remeber to smelt ores at furnance.",
+    "desc": "These will be usefull for making new tools, armors, and hooks. Remeber to smelt ores at furnance.",
     "isHardmode": false,
     "links": [
       {
@@ -72,7 +78,7 @@
   }, {
     "key": "exploringthesurface",
     "label": "Exploring the Surface",
-    "desc": "With your newfound loot, you should be now able to travel around much faster and safer. This will allow you to venture to see how your whole map's surface looks:",
+    "desc": "",
     "isHardmode": false,
     "isSubtitle": true
   }, {
@@ -138,8 +144,8 @@
     ]
   }, {
     "key": "craftingstation",
-    "label": "Crafting Station",
-    "desc": "With your loot, you should be now able to travel around much faster and safer. This will allow you to venture to see how your whole map's surface looks:",
+    "label": "Crafting Stations",
+    "desc": "",
     "isHardmode": false,
     "isSubtitle": true
   }, {
@@ -163,7 +169,7 @@
   }, {
     "key": "bottle",
     "label": "Bottle",
-    "desc": "(Made out of glass (that is made out of sand)) - Just put it on a table or platform. This will allow you to craft potions",
+    "desc": "(Made out of glass (that is made out of sand)) - Just put it on a table or platform. This will allow you to craft potions.",
     "links": [],
     "isHardmode": false
   }, {
@@ -179,17 +185,46 @@
     "links": [],
     "isHardmode": false
   }, {
+    "key": "someprep",
+    "label": "Exploring some more",
+    "desc": "",
+    "isHardmode": false,
+    "isSubtitle": true
+  }, {
     "key": "blitzkrieg",
-    "label": "Blitzkrieg",
+    "label": "Kill 1 or 2 Orbs",
     "desc": "Try grabbing few bombs, ropes and recall potions and dive into corrupted caves. When you get all the way down, blow up an Orb or two (don't blow the third yet!) with your truty bombs, collect loot and recall out!",
     "links": [],
     "isHardmode": false
   }, {
     "key": "Meteorite",
     "label": "Collect Meteorites",
-    "desc": "After destroying orbs, there is a huge chance that meteorite has fallen on your world. Try mining it either with a good pickaxe (made of Tungsten/Gold/Plat) or just blow it up with bombs. This should allow you to craft [Space Gun] and a [Meteor set], that together are useful for a long time!",
+    "desc": "After destroying orbs, there is a huge chance that meteorite has fallen on your world. Try mining it either with a good pickaxe (made of Tungsten/Gold/Plat) or just blow it up with bombs. This should allow you to craft Space Gun and a [Meteor set], that together are useful for a long time!",
     "links": [],
     "isHardmode": false
+  }, {
+    "key": "jungle",
+    "label": "Venture into jungle",
+    "desc": "Right now you're strong enough to explore the jungle. Be careful, enemies here are still strong.",
+    "links": [],
+    "tips": [
+      "Collect vines, stingers and jungle spores.",
+      "Find jungle shrines and giant mahogany trees (Ivy chests).",
+      "Locate Beehives. These places full of honey are home to another Boss - Queen Bee. But we're not gonna fight her yet, there is another baddy waiting for us, near the duneon."
+    ],
+    "isHardmode": false
+  }, {
+    "key": "skyislands",
+    "label": "Explore Sky Islands",
+    "desc": "If you happened to find a gravitation potion or two in chests you just looted, try drinking one and fly up, maintaning high attitude. In Sky Islands, you can find few life-saving accesories and a decent sword (Starfury).",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "bosses",
+    "label": "Bosses",
+    "desc": "",
+    "isHardmode": false,
+    "isSubtitle": true
   }, {
     "key": "arena",
     "label": "Prepare your first arena",
@@ -243,23 +278,6 @@
     ],
     "isHardmode": false
   }, {
-    "key": "jungle",
-    "label": "Venture into jungle",
-    "desc": "Right now you're trong enough to explore the jungle. Be careful, enemies here are still strong.",
-    "links": [],
-    "tips": [
-      "Collect vines, stingers and jungle spores.",
-      "Find jungle shrines and giant mahogany trees (Ivy chests).",
-      "Locate Beehives. These places full of honey are home to another Boss - Queen Bee. But we're not gonna fight her yet, there is another baddy waiting for us, near the duneon."
-    ],
-    "isHardmode": false
-  }, {
-    "key": "skyislands",
-    "label": "Explore Sky Islands",
-    "desc": "If you happened to find a gravitation potion or two in chests you just looted, try drinking one and fly up, maintaning high attitude. In Sky Islands, you can find few life-saving accesories and a decent sword (Starfury)",
-    "links": [],
-    "isHardmode": false
-  }, {
     "key": "sekeletronprep",
     "label": "Sekeletron Arena",
     "desc": "Just place few rows of platforms near the enterance, add few campfires and if you have spare Life Crystal, Heart Lanterns (1 Life Crystal + 4 chains).",
@@ -300,6 +318,12 @@
       "After killing Queen Bee, summoners are getting their first armor - Bee Armor. This set allows them to summon three minions and increases their damage."
     ]
   }, {
+    "key": "hardmodefy",
+    "label": "Preparing for Hardmode",
+    "desc": "",
+    "isHardmode": false,
+    "isSubtitle": true
+  }, {
     "key": "hellevator",
     "label": "Create Hellevator",
     "desc": "Hellevator is a name for a vertical tunnel going all the way from surface to underworld. This method of movement helps a lot when you have to go up and to very often.",
@@ -327,7 +351,7 @@
   }, {
     "key": "fishforcreates",
     "label": "Fish for crates",
-    "desc": "Now that you're almost ready, you can boost your power early in hardmode by fishing up some crates. When opened in Hardmode, these crates will give you new HardMode ores and bars, that you'll be able to use to skip part of the grind",
+    "desc": "Now that you're almost ready, you can boost your power early in hardmode by fishing up some crates. When opened in Hardmode, these crates will give you new HardMode ores and bars, that you'll be able to use to skip part of the grind.",
     "isHardmode": false,
     "links": [],
     "tips": []

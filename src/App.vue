@@ -25,7 +25,7 @@
           </div>
           <div class="clearProgression">
             <img src="./assets/trash_can.png" @click="clearProgression"  />
-            <b> {{ progressionTotal  }} / {{ progressionData.length }} </b>
+            <b> {{ progressionTotal  }} / {{ tasks.length }} </b>
           </div>
         </div>
       </div>
@@ -35,12 +35,17 @@
         <li
           v-for="(item, index) in progressionData"
           :key="item.key">
+          <h2 v-if="item.isSubtitle">
+            <b>{{ item.label }}<tip v-if="showTips && (item.tips && item.tips.length)" :tips="item.tips"></tip></b>
+            <small v-if="showDesc && item.desc.length"> - {{ item.desc }}</small>
+          </h2>
           <el-checkbox
+            v-else
             @change="onToggle(item.key)"
             v-model="progression[item.key]">
             <span>
               <b>{{ item.label }}<tip v-if="showTips && (item.tips && item.tips.length)" :tips="item.tips"></tip></b>
-              <small v-if="showDesc"> - {{ item.desc }}</small>
+              <small v-if="showDesc && item.desc.length"> - {{ item.desc }}</small>
             </span>
           </el-checkbox>
         </li>
@@ -74,7 +79,10 @@ export default {
   },
   computed: {
     'progressionPercentage' () {
-      return Math.round((this.progressionTotal / this.progressionData.length) * 100)
+      return Math.round((this.progressionTotal / this.tasks.length) * 100)
+    },
+    'tasks' () {
+      return this.progressionData.filter(it => !it.isSubtitle)
     }
   },
   mounted () {
@@ -88,6 +96,7 @@ export default {
         }, 0)
         menudelay = 0
       }
+      // localforage.clear()
       setTimeout(() => {
         document.querySelector('.card').classList.add('card--flipped')
       }, menudelay)
