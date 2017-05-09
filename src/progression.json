@@ -278,14 +278,14 @@
     ],
     "isHardmode": false
   }, {
-    "key": "sekeletronprep",
-    "label": "Sekeletron Arena",
+    "key": "skeletronprep",
+    "label": "Skeletron Arena",
     "desc": "Just place few rows of platforms near the enterance, add few campfires and if you have spare Life Crystal, Heart Lanterns (1 Life Crystal + 4 chains).",
     "links": [],
     "isHardmode": false
   }, {
-    "key": "sekeletron",
-    "label": "Fight Sekeletron",
+    "key": "skeletron",
+    "label": "Fight Skeletron",
     "desc": "Guardian of the Dungeon can be fought only at the nighttime, by speaking to Old Man, NPC waiting for you near the dungeon gates.",
     "links": [],
     "tips": [
@@ -367,5 +367,4 @@
       "Remeber to keep running, as Wall of Flesh accelerates as its health goes down."
     ]
   }
-
 ]
