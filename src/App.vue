@@ -221,10 +221,12 @@ html, body {
   width: 32px;
   margin: 0 auto;
 }
+.clearProgression img {
+  cursor: pointer;
+}
 .clearProgression b {
   line-height: 22px;
 }
-
 main {
   width: 100%;
   display: flex;
