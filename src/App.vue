@@ -1,30 +1,63 @@
 <template>
   <div class="tpc">
-    <h1>Terraria Progress</h1>
-    <div class="tpc__info" v-bind:class="{ 'tpc__info--active': progressionPercentage !== 0 }">
-      <el-progress type="circle"
-        :width="75"
-        :percentage="progressionPercentage"
-        :status="progressionPercentage === 100 ? 'success' : ''"></el-progress>
-      <el-button @click="clearProgression" type="danger"><b> {{ progressionTotal  }} / {{ progressionData.length }} </b><i class="el-icon-circle-cross"></i></el-button>
-    </div>
-
-    <div class="tpc__checklist">
-        <el-checkbox
+    <header>
+      <div class="card">
+        <div class="front">
+          <h1>Terraria Progress</h1>
+        </div>
+        <div class="back" v-bind:class="{ 'tpc__info--active': progressionPercentage !== 0 }">
+          <div class="progress">
+            <img src="./assets/stopwatch.png" />
+            <el-progress type="circle"
+              :width="65"
+              :percentage="progressionPercentage"
+              :show-text="false"
+              :status="progressionPercentage === 100 ? 'success' : ''">
+              </el-progress>
+          </div>
+          <div class="tipsSwitch">
+            <img src="./assets/announcement_box.png" />
+            <el-switch
+              v-model="showDesc"
+              on-text=""
+              off-text="">
+            </el-switch>
+          </div>
+          <div class="clearProgression">
+            <img src="./assets/trash_can.png" @click="clearProgression"  />
+            <b> {{ progressionTotal  }} / {{ progressionData.length }} </b>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <ul>
+        <li
           v-for="(item, index) in progressionData"
-          :key="index"
-          @change="onToggle(item.key)"
-          v-model="progression[item.key]">
-          <span><b>{{ item.label }}</b><small> - {{ item.desc }}</small></span>
-        </el-checkbox>
-    </div>
+          :key="item.key">
+          <el-checkbox
+            @change="onToggle(item.key)"
+            v-model="progression[item.key]">
+            <span>
+              <b>{{ item.label }}<tip v-if="showTips && (item.tips && item.tips.length)" :tips="item.tips"></tip></b>
+              <small v-if="showDesc"> - {{ item.desc }}</small>
+            </span>
+          </el-checkbox>
+        </li>
+      </ul>
+    </main>
   </div>
 </template>
 <script>
 import PROGRESSION from '@/progression.json'
+import localforage from 'localforage'
+import Tip from '@/components/Tip.vue'
 
 export default {
   name: 'app',
+  components: {
+    Tip
+  },
   data () {
     const progression = PROGRESSION.reduce((acc, cur) => {
       acc[cur.key] = false
@@ -34,13 +67,33 @@ export default {
     return {
       progression,
       progressionTotal: 0,
-      progressionData: PROGRESSION
+      progressionData: PROGRESSION,
+      showDesc: true,
+      showTips: true
     }
   },
   computed: {
     'progressionPercentage' () {
       return Math.round((this.progressionTotal / this.progressionData.length) * 100)
     }
+  },
+  mounted () {
+    localforage.getItem('progression').then(localProgression => {
+      let menudelay = 1500
+      if (localProgression) {
+        this.progression = localProgression
+        this.progressionTotal = Object.keys(localProgression).reduce((total, key) => {
+          total += localProgression[key] ? 1 : 0
+          return total
+        }, 0)
+        menudelay = 0
+      }
+      setTimeout(() => {
+        document.querySelector('.card').classList.add('card--flipped')
+      }, menudelay)
+    }).catch(err => {
+      console.log(err)
+    })
   },
   methods: {
     clearProgression () {
@@ -52,62 +105,154 @@ export default {
     },
     onToggle (key) {
       this.progressionTotal += this.progression[key] ? 1 : -1
+      localforage.setItem('progression', this.progression)
     }
   }
 }
 </script>
 <style>
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-.tpc {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+.tpc {
   height: 100%;
+  padding-top: 124px;
 }
-.tpc > h1 {
-  text-align: center;
-  font-size: 1.5rem;
+.tpc > header {
+  -webkit-perspective: 800;
+  perspective: 800;
   height: 100px;
+  width: 100%;
   margin: 0 0 1.5rem;
-  line-height: 100px;
-}
-.tpc__info {
   position: fixed;
-  transform: translate(0, -100%);
-  transition: transform 0.3s ease, width 0.3s ease;
-  left: 0;
-  right: 0;
   top: 0;
-  background: #fff;
   z-index: 2;
-  height: 100px;
+}
+.card.card--flipped {
+  -webkit-transform: rotateX(-180deg);
+  transform: rotateX(-180deg);
+}
+.card {
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  transform-origin: center;
+}
+
+.card .front,
+.card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #fff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  line-height: 100px;
+  z-index: 2;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card .front {
+  z-index: 1;
+  text-align: center;
+}
+
+.card .front h1 {
+  font-size: 1.5rem;
+  line-height: 100px;
+  margin: 0;
+}
+
+.card .back {
+  -webkit-transform: rotatex(-180deg);
+  transform: rotatex(-180deg);
+  padding: 0;
+  margin: 0;
+  background: #fff;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
-.tpc__info--active {
-  transform: translate(0, 0);
+
+.progress {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
-.tpc__info > div,
-.tpc__info > button {
-  flex: 0 auto;
+.progress img {
+  position: absolute;
 }
-.tpc__checklist {
+
+.tipsSwitch,
+.clearProgression {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 65px;
+}
+.tipsSwitch img,
+.clearProgression img {
+  flex: 0 32px;
+  width: 32px;
+  margin: 0 auto;
+}
+.clearProgression b {
+  line-height: 22px;
+}
+
+main {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   padding: 0 1.5rem 1.5rem;
 }
-.tpc__checklist span {
+
+main ul,
+main li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main ul {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+main li {
+  flex: 0 100%;
+  margin-bottom: 0.75rem;
+}
+
+main span {
   transition: opacity 0.6s ease;
+  white-space: normal;
 }
 .is-checked+span {
   font-style: italic;
@@ -116,30 +261,20 @@ html, body {
   opacity: 0.5;
 }
 .is-checked+span > span { color: #2c3e50; }
-.tpc__checklist > label {
+
+main > label {
   flex: 0 100%;
   margin-left: 0 !important;
   white-space: normal;
   margin-bottom: 24px;
 }
+
+
 @media screen and (min-width: 1024px) {
-  html {
-    font-size: 24px;
-  }
-  .tpc__info {
-    justify-content: center;
-  }
-  .tpc__info > div,
-  .tpc__info > button {
-    margin: 0 1rem;
-  }
-  .tpc__checklist {
-    width: 1024px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+  main ul {
     columns: 2;
     column-gap: 2rem;
+    display: block;
   }
   .tpc__checklist span {
     height: 19px;
@@ -149,5 +284,46 @@ html, body {
     padding-right: 1rem;
     margin-bottom: 12px;
   }
+  .card.card--flipped {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  .card .front,
+  .card .back {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    transition: all 0.3s ease;
+  }
+  .card .front {
+    background: transparent;
+    box-shadow: none;
+    text-align: left;
+    padding-left: 1.5rem;
+    z-index: 3;
+  }
+  .card .back {
+    -webkit-transform: rotatex(0);
+    transform: rotatex(0);
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+  }
+  .progress,
+  .tipsSwitch,
+  .clearProgression {
+    transition: all 0.3s ease;
+    flex: 0 4rem;
+    margin-left: 1.5rem;
+  }
 }
+@media screen and (min-width: 1440px) {
+  main ul {
+    columns: 3;
+  }
+}
+@media screen and (min-width: 1660px) {
+  main ul {
+    columns: 4;
+  }
+}
+
 </style>

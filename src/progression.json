@@ -1,117 +1,347 @@
 [
   {
-    "key": "woodandgel",
-    "label": "Wood & Gel",
-    "desc": "Gather wood from trees and gel from slimes.",
-    "links": [],
-    "isHardmode": false
-  }, {
-    "key": "torches",
-    "label": "Torches",
-    "desc": "Wood and gel.",
-    "links": [],
-    "isHardmode": false
+    "key": "slimesandstones",
+    "label": "Slimes & Stones",
+    "desc": "Harvest the surface for gel, wood and stone for early equipment (wooden armor, sword, bows, a bunch of arrows and torches).",
+    "isHardmode": false,
+    "links": [
+      {
+        "href": "http://terraria.wikia.com/wiki/Starter_Guide",
+        "text": "Wikia's Starter Guide"
+      }, {
+        "href": "http://terraria.gamepedia.com/Guide:Getting_started",
+        "text": "Gamepedia's Getting Started"
+      }
+    ]
   }, {
     "key": "housing",
     "label": "Housing",
-    "desc": "Build a house with at least 4 rooms.",
-    "links": [],
-    "isHardmode": false
+    "desc": "Create a shelter at your spawn. Also, create few rooms around it, NPCs will like it.",
+    "isHardmode": false,
+    "links": [
+      {
+        "href": "http://terraria.gamepedia.com/House",
+        "text": "Gamepedia's House Article"
+      }, {
+        "href": "http://terraria.gamepedia.com/Guide:Bases",
+        "text": "Gamepedia's Base Guide"
+      }
+    ]
   }, {
-    "key": "mining",
-    "label": "Mining",
-    "desc": "Ores, gems and heartcrystals",
-    "links": [],
-    "isHardmode": false
+    "key": "firstcaves",
+    "label": "First Caves",
+    "desc": "Find an opening and venture into the depth of caves:",
+    "isHardmode": false,
+    "isSubtitle": true
+  }, {
+    "key": "oresandgems",
+    "label": "Ores and Gems",
+    "desc": "these will be usefull for making new tools, armors, and hooks. Remeber to smelt ores at furnance.",
+    "isHardmode": false,
+    "links": [
+      {
+        "href": "http://terraria.gamepedia.com/Ores",
+        "text": "Gamepedia's Ores Article"
+      }, {
+        "href": "http://terraria.gamepedia.com/Gems",
+        "text": "Gamepedia's Gems Article"
+      }
+    ]
+  }, {
+    "key": "lifecrystals",
+    "label": "Life Crystals",
+    "desc": "These items will raise your maximal HP when picked up. 5 of them should be enough for now, raising your HP to 200.",
+    "isHardmode": false,
+    "links": [
+      {
+        "href": "http://terraria.gamepedia.com/Life_Crystal",
+        "text": "Gamepedia's Life Crystal Article"
+      }
+    ]
+  }, {
+    "key": "goldenchests",
+    "label": "Golden Chest",
+    "desc": "These will have useful equipment like Cloud in a Bottle or Magic Mirror, or maybe a weapon like Enchanted Boomerang.",
+    "isHardmode": false,
+    "links": [
+      {
+        "href": "http://terraria.gamepedia.com/Gold_Chest",
+        "text": "Gamepedia's Gold Chest Article"
+      }
+    ]
+  }, {
+    "key": "exploringthesurface",
+    "label": "Exploring the Surface",
+    "desc": "With your newfound loot, you should be now able to travel around much faster and safer. This will allow you to venture to see how your whole map's surface looks:",
+    "isHardmode": false,
+    "isSubtitle": true
+  }, {
+    "key": "snow",
+    "label": "Snow",
+    "desc": "Snow areas aren't that much of a danger. If there's a cave in there, be sure to check them out. They can have Ice Chests in them, that are like Golden chests, but better!",
+    "isHardmode": false,
+    "links": [
+      {
+        "href": "http://terraria.gamepedia.com/Snow_biome",
+        "text": "Gamepedia's Snow Biome Article"
+      }
+    ]
+  }, {
+    "key": "corruption",
+    "label": "Corruption",
+    "desc": "Corruption is easier to get trough than Crimson, but it is still hard. Try to build bridges over chasms and try to get trough them as fast as possible.",
+    "isHardmode": false,
+    "links": [
+      {
+        "href": "http://terraria.gamepedia.com/The_Corruption",
+        "text": "Gamepedia's The Corruption Article"
+      }
+    ]
+  }, {
+    "key": "crimson",
+    "label": "Crimson",
+    "desc": "Crimson is harder than its counterpart, but there are still ways to do that. Try outrunning your enemies, not get locked between rock and a enemies' punches, and you should be good.",
+    "isHardmode": false,
+    "links": [
+      {
+        "href": "http://terraria.gamepedia.com/The_Crimson",
+        "text": "Gamepedia's The Crimson Article"
+      }
+    ]
+  }, {
+    "key": "deserts",
+    "label": "Desert",
+    "desc": "Deserts aren't much of a threat UNLESS there is a sandstorm going on. When that happens - retreat. You aren't able to move as fast and you may encounter fast and hard-hitting enemies. Also, if you see something like pyramid, be sure to loot it!",
+    "isHardmode": false,
+    "links": [
+      {
+        "href": "http://terraria.gamepedia.com/Desert",
+        "text": "Gamepedia's Desert Article"
+      }
+    ]
+  }, {
+    "key": "dungeonpeek",
+    "label": "Dungeon",
+    "desc": "If you find a Dungeon, check out what's lying on its shelves near the surface. Be careful not to go too deep, something scary hides there.",
+    "isHardmode": false,
+    "links": []
+  }, {
+    "key": "ocean",
+    "label": "Ocean",
+    "desc": "When you get to the Ocean, check if there isn't someone lying there, this could be NPC angler that can give you quests for cool fishing equipment.When you get to the Ocean, check if there isn't someone lying there, this could be NPC angler that can give you quests for cool fishing equipment.",
+    "isHardmode": false,
+    "links": [
+      {
+        "href": "http://terraria.gamepedia.com/Ocean",
+        "text": "Ocean"
+      }
+    ]
+  }, {
+    "key": "craftingstation",
+    "label": "Crafting Station",
+    "desc": "With your loot, you should be now able to travel around much faster and safer. This will allow you to venture to see how your whole map's surface looks:",
+    "isHardmode": false,
+    "isSubtitle": true
   }, {
     "key": "furnace",
     "label": "Furnace",
-    "desc": "20 stone block, 4 woods and 3 torches",
+    "desc": "(20 stones, 4 woods, 3 torches, at work bench) - Enables you to smelt Ores into Bars, which is required to craft tools with them.",
     "links": [],
     "isHardmode": false
   }, {
-    "key": "armorandtools",
-    "label": "Armor & Tools",
-    "desc": "Hook (15 single gem + chain), full golden/platinum armor and full golden/platinum tools.",
+    "key": "workbench",
+    "label": "Workbench",
+    "desc": "(10 woods, anywhere) - Gives you many options for early-game crafting.",
     "links": [],
     "isHardmode": false
   }, {
-    "key": "arena1",
-    "label": "Arena I (Eye of C'thulu)",
-    "desc": "Start your boss arena development.",
+    "key": "ironleadanvil",
+    "label": "Iron/Lead Anvil",
+    "desc": "(5 iron/lead Bars, at work bench) - Allows you to craft tools and weapons from Bars.",
     "links": [],
     "isHardmode": false
   }, {
-    "key": "housing2",
-    "label": "Housing 2",
-    "desc": "Build at least 4 more rooms.",
+    "key": "bottle",
+    "label": "Bottle",
+    "desc": "(Made out of glass (that is made out of sand)) - Just put it on a table or platform. This will allow you to craft potions",
     "links": [],
+    "isHardmode": false
+  }, {
+    "key": "saw",
+    "label": "Saw",
+    "desc": "(10 woods, 2 iron/lead bars, 1 chain (that is made out of iron/lead bars, at workbench) - This station will allow you to craft many things out of wood that are helpful in creating new base.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "loom",
+    "label": "Loom",
+    "desc": "(12 wood, at work bench) - this station will allow you to craft silk, that you can use to craft beds (that can change your spawn point) or Robes, that mages can use with gems to increase their capabilities.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "blitzkrieg",
+    "label": "Blitzkrieg",
+    "desc": "Try grabbing few bombs, ropes and recall potions and dive into corrupted caves. When you get all the way down, blow up an Orb or two (don't blow the third yet!) with your truty bombs, collect loot and recall out!",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "Meteorite",
+    "label": "Collect Meteorites",
+    "desc": "After destroying orbs, there is a huge chance that meteorite has fallen on your world. Try mining it either with a good pickaxe (made of Tungsten/Gold/Plat) or just blow it up with bombs. This should allow you to craft [Space Gun] and a [Meteor set], that together are useful for a long time!",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "arena",
+    "label": "Prepare your first arena",
+    "desc": "Find a somewhat flat space, prefferably in the pure biome, and build a few layers of platforms. Add a campfire here and there, and this should do for your first arena.",
+    "links": [],
+    "isHardmode": false
+  }, {
+    "key": "kingslime",
+    "label": "King Slime",
+    "desc": "This tough, but also slow and not-so-smart miniboss can be fought for his loot. You can create spawner for boss by first crafting crown (1 ruby and 5 gold/platinum bars) and then taking it to the Demon Altar and mixing up with 20 Gel.",
+    "links": [],
+    "tips": [
+      "Run all the time. King Slime is easily outrun, but he hits hard.",
+      "Try to keep him at distance and wear him off over time.",
+      "King Slime deals a lot of damage when he touches you. Avoid it at all cost."
+    ],
     "isHardmode": false
   }, {
     "key": "eoc",
-    "label": "Farm Eye of C'thulus",
-    "desc": "Get enough demonite/crimson ores to craft your next set and tools.",
+    "label": "Fight Eye of C'thulhu",
+    "desc": "At night, prepare yourself for a fight and use the Suspicious Looking Eye.",
+    "links": [],
+    "tips": [
+      "Stay mobile and dodge all the attacks",
+      "Kill Servants of the C'thulhu, as they can be annoying when they stack up.",
+      "When Eye's HP goes down enough, he transforms into a fiercer enemy, dashes in a quick succesion, but as a tradeoff, his armor is lowered to 0. Try to be as precise as possible and finish him off.",
+      "This will allow another NPC to spawn - Dryad. She will sell nature-related items."
+    ],
+    "isHardmode": false
+  }, {
+    "key": "eow",
+    "label": "(Corruption) Fight Eater of Worlds",
+    "desc": "After your first boss, it's time to take another beast down. This long worm resides in caves of a Corruption biome and awakes when 3 Shadow Orbs are destroyed.",
+    "links": [],
+    "tips": [
+      "Blow up some of the underground cave and place platforms for a quick arena.",
+      "Beisdes head, most of the worm doesn't deal significant damage. As long as you dodge it, you should be fine.",
+      "For ragners, it is recommended to equip Jester's Arrows, as their piercing ability makes you able to hit all the segments at once"
+    ],
+    "isHardmode": false
+  }, {
+    "key": "boc",
+    "label": "(Crimson) Fight Brain of C'thulhu",
+    "desc": "Deep inside caves of the Crimson, this terryfing monster resides. Break 3 Crimson Hearts to summon this beast.",
+    "links": [],
+    "tips": [
+      "Make an arena with a few row of platforms inside the cave",
+      "Jester's arrows are recommended for Rangers to take out Brain's minions in first stage.",
+      "After all the minions are dead, boss will try to rush at the player. Use weapon with high knockback to keep him at bay.",
+      "After defeating either of those you now can craft Armor and Weapons from these bosses. Demonite Bars and Shadow Scales make for [Shadow Armor], that gives good deal of movespeed, that can be used even ny other classes. Crimtane Bards and Tissue Samples make for [Crimson Armor], that has great healing buff, useful for fighting bosses and exploring."
+    ],
+    "isHardmode": false
+  }, {
+    "key": "jungle",
+    "label": "Venture into jungle",
+    "desc": "Right now you're trong enough to explore the jungle. Be careful, enemies here are still strong.",
+    "links": [],
+    "tips": [
+      "Collect vines, stingers and jungle spores.",
+      "Find jungle shrines and giant mahogany trees (Ivy chests).",
+      "Locate Beehives. These places full of honey are home to another Boss - Queen Bee. But we're not gonna fight her yet, there is another baddy waiting for us, near the duneon."
+    ],
+    "isHardmode": false
+  }, {
+    "key": "skyislands",
+    "label": "Explore Sky Islands",
+    "desc": "If you happened to find a gravitation potion or two in chests you just looted, try drinking one and fly up, maintaning high attitude. In Sky Islands, you can find few life-saving accesories and a decent sword (Starfury)",
     "links": [],
     "isHardmode": false
   }, {
-    "key": "dryad",
-    "label": "Dryad",
-    "desc": "Make sure you have room for her and buy around 100 purification powder once she moves in.",
+    "key": "sekeletronprep",
+    "label": "Sekeletron Arena",
+    "desc": "Just place few rows of platforms near the enterance, add few campfires and if you have spare Life Crystal, Heart Lanterns (1 Life Crystal + 4 chains).",
     "links": [],
     "isHardmode": false
   }, {
-    "key": "arena2",
-    "label": "Arena II (EoW or BoC)",
-    "desc": "Above ground level if you have corruption, or an inside the ‘cave’ if you have crimson.",
+    "key": "sekeletron",
+    "label": "Fight Sekeletron",
+    "desc": "Guardian of the Dungeon can be fought only at the nighttime, by speaking to Old Man, NPC waiting for you near the dungeon gates.",
     "links": [],
+    "tips": [
+      "Take our hands to make fight much easier.",
+      "Skeletron is vulnerable to Frostburn debuff from Frostburn arrows ((ice blocks + torches) + arrows).",
+      "After you defeat Bonely boss, you're allowed to go into Dungeon, with many enemies and items awaiting you"
+    ],
     "isHardmode": false
   }, {
-    "key": "eoworboc",
-    "label": "Farm EoW or BoC",
-    "desc": "Get enough orbs to make a nightmare/deathbringer pickaxe and crimson/shadow set.",
+    "key": "dungeon",
+    "label": "Raid the dungeon",
+    "desc": "After freeing Old Man from his curse, it is time to go down the tunnels of the duneon and cause some mayhem.",
     "links": [],
+    "tips": [
+      "Scavenge all the Water Candles and Water Bolts - These items will be laying on the shelves of the Dungeon, and while the second on is just a weapon, the first one can be an issue, especially when going to the dungeon early on. These candles increase amount of monsters spawning, and can be used later on for farming monsters.",
+      "Open up all the Locked Golden Chests - Sometimes, enemies from Dungeon will drop a Golden key, which can be used to open up Golden Chests. They are source of many great weapons and two useful items, Cobalt Shield (Negates Knockback) and Shadow Key (Allows you to open Shadow Chests in Underworld).",
+      "Try to find Mechanic, Bewitching Table and Alchemy table - Mechanic is NPC found in Dungeon, that allows you to buy wires and stuff related to them. Other two are useful furniture pieces, first allows you to summon more minions, and other makes your potion brewing more efficent."
+    ],
     "isHardmode": false
   }, {
-    "key": "side",
-    "label": "Side adventures and bosses",
-    "desc": "Underground Jungle (Queen Bee), Dungeon (Skeletron), Floating Islands, Oceans.",
+    "key": "queenbee",
+    "label": "Fight Queen Bee",
+    "desc": "A Queen of Jungle Hives, residing inside them, is still unharmed. Time to change it.",
+    "isHardmode": false,
     "links": [],
-    "isHardmode": false
+    "tips": [
+      "Prepare your arena just like you always do. Be careful to not hit the Larvae while doing so, because that will spawn a Queen Bee",
+      "Use Bouncing Weapons, like Waterbolt or Meteor Bullets, closed spaces like hive are efficent when using them",
+      "Getting Bezoar from jungle enemies helps quite a lot in this fight, as Queen Bee often inflicts Poison on you.",
+      "After killing Queen Bee, summoners are getting their first armor - Bee Armor. This set allows them to summon three minions and increases their damage."
+    ]
   }, {
-    "key": "hell",
-    "label": "Hell",
-    "desc": "Get enough hellstone for a molten pickaxe and the set.",
+    "key": "hellevator",
+    "label": "Create Hellevator",
+    "desc": "Hellevator is a name for a vertical tunnel going all the way from surface to underworld. This method of movement helps a lot when you have to go up and to very often.",
+    "isHardmode": false,
     "links": [],
-    "isHardmode": false
+    "tips": []
   }, {
-    "key": "arena3",
-    "label": "Arena III (Wall of Flesh)",
-    "desc": "Make a really long platform made out of any block you want for The Wall of Flesh.",
+    "key": "underworld",
+    "label": "Venture to the Underworld",
+    "desc": "All the way down, there is a massive biome full of lava, evil monster, and more lava. It is also the place where you can find strongest of the PreHardMode Bar: Hellstone.",
+    "isHardmode": false,
     "links": [],
-    "isHardmode": false
+    "tips": [
+      "Mine out some hellstone, (with obsidian skin potion you can safely dive into lava). This can be combined later on with obsidian (when lava meets water) to create hellstone bars.",
+      "Build a Hellbridge (this will be cruical in the fight with the next boss. Just make a 1-block thin bridge for at least half of the Hell's lenght, that should do it.",
+      "Open up Shadow Chests (if you happened to find Shadow Key in the dungeon)."
+    ]
+  }, {
+    "key": "plantfarm",
+    "label": "Prepare Plant Farm",
+    "desc": "Later on, in HardMode, it's gonna get harder. To help out with surviving it, it's best to prepare a potion farm.",
+    "isHardmode": false,
+    "links": [],
+    "tips": []
+  }, {
+    "key": "fishforcreates",
+    "label": "Fish for crates",
+    "desc": "Now that you're almost ready, you can boost your power early in hardmode by fishing up some crates. When opened in Hardmode, these crates will give you new HardMode ores and bars, that you'll be able to use to skip part of the grind",
+    "isHardmode": false,
+    "links": [],
+    "tips": []
   }, {
     "key": "wof",
-    "label": "Kill the Wall of Flesh and enter in hardmode",
-    "desc": "Don't forget to collect your Pwnhammer.",
+    "label": "Fight Wall of Flesh",
+    "desc": "Your last challenge in PreHardMode, the Guardian of the Hardmode, Wall of Flesh, is here to take you on.",
+    "isHardmode": false,
     "links": [],
-    "isHardmode": false
-  }, {
-    "key": "newores",
-    "label": "Generate ores",
-    "desc": "pwn all but one demon altars with your Pwnhammer.",
-    "links": [],
-    "isHardmode": true
-  }, {
-    "key": "gathernewores",
-    "label": "Gather the new Ores",
-    "desc": "Tier 1 (Cobalt/Paladium), Tier 2 (Mythril/Orichalcum) and Tier 3 (Adamantite/Titanium).",
-    "links": [],
-    "isHardmode": true
-  }, {
-    "key": "arena4",
-    "label": "Arena IV (Harpies & Wyverns)",
-    "desc": "Get enough Souls of Flights and Huge Harpy Feather for your first wing.",
-    "links": [],
-    "isHardmode": true
+    "tips": [
+      "Try to get rid of Hungries, as they can deal significant damage later on.",
+      "Hitting the eye is more efficent as it has less Defence.",
+      "Remeber to keep running, as Wall of Flesh accelerates as its health goes down."
+    ]
   }
+
 ]
