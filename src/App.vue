@@ -300,6 +300,7 @@ main > label {
     text-align: left;
     padding-left: 1.5rem;
     z-index: 3;
+    pointer-events: none;
   }
   .card .back {
     -webkit-transform: rotatex(0);
